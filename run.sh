@@ -1,9 +1,11 @@
 #!/bin/bash
 
+find . -name "*.class" -type f -delete
+
 echo ""
 echo "Compile java-files to class-files"
 
-javac -d ./$1 $(find . -name "*.java") #./$1/*.java
+javac -d ./$1 $(find ./$1 -name "*.java") #./$1/*.java
 
 echo ""
 echo "============================================================"

@@ -16,6 +16,6 @@ interface IFactory {
      * @param Integer duration
      * @return AbstractService
      */
-    public createService(String name, Integer duration);
+    public AbstractService createService(String name, Integer duration);
 
 }
